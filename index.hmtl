@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Ton Prénom Nom]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+            margin-bottom: 1rem;
+        }
+        section {
+            background: white;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill {
+            background: var(--light);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .experience, .project {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .experience h3, .project h3 {
+            margin: 0;
+            color: var(--secondary);
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Remplace l'image par la tienne -->
+            <img src="https://via.placeholder.com/150" alt="Photo de profil" class="profile-img">
+            <h1><!-- Ton Prénom Nom --></h1>
+            <p><!-- Ex: Étudiant en BTS SIO SISR | Technicien Réseaux --></p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                <!-- Ex: Étudiant en BTS SIO option SISR, je me spécialise dans l'administration système et la gestion des réseaux. Passionné par les technologies Microsoft et Linux, je cherche à mettre mes compétences au service d'entreprises innovantes. -->
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div class="skills-list">
+                <!-- Exemples : -->
+                <span class="skill">Windows Server</span>
+                <span class="skill">Linux (Debian/Ubuntu)</span>
+                <span class="skill">Active Directory</span>
+                <span class="skill">Cisco (CCNA)</span>
+                <span class="skill">VLAN/VPN</span>
+                <span class="skill">Sécurité Réseau</span>
+                <span class="skill">Virtualisation (VMware)</span>
+                <span class="skill">Bash/PowerShell</span>
+                <!-- Ajoute/retire selon tes compétences -->
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Expériences Professionnelles</h2>
+            <div class="experience">
+                <h3><!-- Nom de l'entreprise --></h3>
+                <p class="date"><!-- Dates (ex: Juin 2025 - Juillet 2025) --></p>
+                <p><strong><!-- Poste occupé --></strong></p>
+                <ul>
+                    <li><!-- Mission 1 --></li>
+                    <li><!-- Mission 2 --></li>
+                </ul>
+            </div>
+            <!-- Ajoute d'autres expériences si besoin -->
+        </section>
+
+        <section id="education">
+            <h2>Formation</h2>
+            <div class="experience">
+                <h3>BTS SIO option SISR</h3>
+                <p class="date"><!-- Année en cours --></p>
+                <p><strong><!-- Nom du lycée/école --></strong></p>
+            </div>
+            <!-- Ajoute d'autres formations si besoin -->
+        </section>
+
+        <section id="projects">
+            <h2>Projets Réalisés</h2>
+            <div class="project">
+                <h3><!-- Nom du projet --></h3>
+                <p class="date"><!-- Année --></p>
+                <p><!-- Description courte + technologies utilisées --></p>
+            </div>
+            <!-- Ajoute d'autres projets si besoin -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="mailto:<!-- ton email -->"><i class="fas fa-envelope"></i> <!-- ton email --></a>
+                <a href="<!-- lien LinkedIn -->" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <!-- Ajoute GitHub ou autre si besoin -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 <!-- Ton Prénom Nom --> | Portfolio BTS SIO SISR</p>
+    </footer>
+</body>
+</html>
